@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" href="img\logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <link rel="stylesheet" href="css\style2.css" />
+
+    <style>
+        /* Dark theme styles */
+        body {
+            background-image: url('img/background.png');
+            color: #eee;
+        }
+
+        .navbar-default {
+            background-color: #333;
+            border-color: #222;
+        }
+
+        .navbar-default .navbar-brand {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #ccc;
+            background-color: #444;
+        }
+
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #eee;
+            background-color: #555;
+        }
+
+        /* Styling for logo */
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Styling for text color */
+        h2,
+        h3 {
+            color: #eee;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        /* Styling for social media icons */
+        .social-icons img {
+            height: 40px;
+            width: 40px;
+        }
+
+        /* Styling for form */
+        .form-control {
+            border-radius: 0;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 5px;
+        }
+
+        input[type="button"] {
+            border-radius: 0;
+            background-color: #333;
+            color: #eee;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #555;
+        }
+
+        /* Style for modal */
+        .modal-content {
+            background-color: #333;
+            color: #eee;
+            border-radius: 0;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #444;
+        }
+
+        .modal-header .close {
+            color: #eee;
+        }
+
+        .modal-title {
+            color: #eee;
+        }
+
+        .modal-body input[type="email"],
+        .modal-body input[type="password"],
+        .modal-body input[type="text"] {
+            background-color: #444;
+            color: #eee;
+            border: 1px solid #444;
+        }
+
+        .modal-body input[type="email"]::placeholder,
+        .modal-body input[type="password"]::placeholder,
+        .modal-body input[type="text"]::placeholder {
+            color: #ccc;
+        }
+
+        .modal-body input[type="email"]:focus,
+        .modal-body input[type="password"]:focus,
+        .modal-body input[type="text"]:focus {
+            background-color: #555;
+            border-color: #555;
+            color: #eee;
+        }
+
+        .modal-body button[type="submit"] {
+            border-radius: 0;
+            background-color: #333;
+            color: #eee;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .modal-body button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MEDYO MASARAP</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order online.html">Order online</a></li>
+                <li class="active"><a href="contact us.html">Contact us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button></li>
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">Signup</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--<img src="contactus_banner1-1100x200.jpg"/>--></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Follow Us On</h2>
+            </div>
+        </div>
+        <div class="row social-icons">
+            <div class="col-md-1">
+                <a href="https://www.facebook.com/medyomasarapstreetfoods/"><img src="social\facebook.png"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://www.instagram.com/medyomasarapstreetfoods/"><img src="social\instagram.png"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://twitter.com/medyomasarapstreetfoods"><img src="social\twitter.png"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://www.youtube.com/medyomasarapstreetfoods"><img src="social\youtube.png"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Remember me:</label>
+                        <input type="checkbox" />
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="Send Message" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <h3>Get in touch! We'd love to hear from you.</h3>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="registrationModalLabel">Registration</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- Registration Form -->
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="newEmail">Email address:</label>
+                            <input type="email" class="form-control" id="newEmail" name="newEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Password:</label>
+                            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

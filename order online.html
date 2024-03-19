@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <link rel="icon" href="img\logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css\style.css" />
+
+    <style>
+        /* Paste the CSS styles from the first HTML code here */
+        /* Dark theme styles */
+        body {
+            background-image: url('img/background.png');
+            color: #eee;
+        }
+
+        .navbar-default {
+            background-color: #333;
+            border-color: #222;
+        }
+
+        .navbar-default .navbar-brand {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            color: #eee;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #ccc;
+            background-color: #444;
+        }
+
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #eee;
+            background-color: #555;
+        }
+
+        /* Styling for Login and Registration Modals */
+        .modal-content {
+            border-radius: 0;
+            background-color: #333;
+            color: #eee;
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-title {
+            font-weight: bold;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        .btn-default {
+            border-radius: 0;
+            background-color: #444;
+            border: none;
+            color: #eee;
+        }
+
+        .btn-default:hover {
+            background-color: #555;
+        }
+
+        .btn-primary {
+            border-radius: 0;
+            background-color: #333;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #555;
+        }
+
+        /* Styling for logo */
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Styling for text color */
+        h1,
+        h4,
+        p,
+        .carousel-control {
+            color: #eee;
+        }
+
+        .carousel-indicators li {
+            background-color: #555;
+        }
+
+        .carousel-control {
+            color: #eee;
+        }
+
+        /* Styling for iframe */
+        iframe {
+            border: 2px solid #444;
+        }
+
+        /* Additional styles for this page */
+        .abc1 {
+            padding-top: 30px;
+        }
+
+        .form {
+            padding-top: 30px;
+            text-align: center; /* Center align the form */
+        }
+
+        .abc {
+            margin-left: 20px;
+        }
+
+        /* Centering the menu items */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; /* Add spacing between menu items */
+        }
+
+        .flavor {
+            flex-grow: 1; /* Flavor takes up remaining space */
+        }
+
+        .price {
+            margin-left: 20px; /* Add some space between flavor and price */
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MEDYO MASARAP</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Index.html">Home</a></li>
+                <li class="active"><a href="order online.html">Menu</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button></li>
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">Signup</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container abc1">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img\logo.png" class="img-responsive logo" alt="sorry" id="1" width="150px" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-6 form">
+                <form>
+                    <div class="menu">
+                        <main>
+                            <section>
+                                <h3>Menu</h3>
+                                <article class="item">
+                                    <div class="menu-item">
+                                        <p class="flavor">Fishball</p>
+                                        <p class="price">Php2.00/pc</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <div class="menu-item">
+                                        <p class="flavor">Kwek Kwek</p>
+                                        <p class="price">Php5.00/pc</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <div class="menu-item">
+                                        <p class="flavor">Cheese Stick</p>
+                                        <p class="price">Php5.00/pc</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <div class="menu-item">
+                                        <p class="flavor">Isaw</p>
+                                        <p class="price">Php5.00/pc</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <div class="menu-item">
+                                        <p class="flavor">Corndog</p>
+                                        <p class="price">Php5.00/pc</p>
+                                    </div>
+                                </article>
+                            </section>
+                        </main>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Registration Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="registrationModalLabel">Registration</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Registration Form -->
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="newEmail">Email address:</label>
+                        <input type="email" class="form-control" id="newEmail" name="newEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Password:</label>
+                        <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" name="address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
